@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  telegram-miniapp:
+    image: demo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8181:8181"
+    environment:
+      - SERVER_PORT= 8181
